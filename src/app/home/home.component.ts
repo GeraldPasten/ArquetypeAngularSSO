@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BackEndApiService } from '../service/back-end-api.service';
 import Keycloak from 'keycloak-js';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 
 const clientId = environment.client;
 const urlKeycloak = environment.urlKeycloak;

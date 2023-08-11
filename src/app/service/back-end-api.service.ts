@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError} from 'rxjs';
 import { Router } from '@angular/router';
 import { catchError } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment.prod';
 
 const url = environment.url;
 

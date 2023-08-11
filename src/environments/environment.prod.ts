@@ -1,4 +1,7 @@
 export const environment = {
   production: true,
-  url: 'https://baseservice-quarkus-gateway-sso1-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/gateway/rest'
-};
+  url: '${OPENSHIFT_URL}',
+  urlKeycloak: '${OPENSHIFT_SSO_URL}',
+  realm: '${OPENSHIFT_SSO_REALM}',
+  client: '${OPENSHIFT_SSO_CLIENT}'
+}
