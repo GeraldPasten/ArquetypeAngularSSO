@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
-  url: process.env.OPENSHIFT_URL || 'a',
-  urlKeycloak: process.env.OPENSHIFT_SSO_URL || 'a',
-  realm: process.env.OPENSHIFT_SSO_REALM || 'a',
-  client: process.env.OPENSHIFT_SSO_CLIENT || 'a'
+  url: 'https://baseservice-quarkus-gateway-sso1-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/gateway/rest',
+  urlKeycloak: 'https://keycloak-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/auth',
+  realm: 'front',
+  client: 'frontend'
 }
