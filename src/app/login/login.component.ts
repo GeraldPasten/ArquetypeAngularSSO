@@ -14,6 +14,8 @@ const prueba = environment.prueba;
 })
 export class LoginComponent implements OnInit {
 
+  constructor() { }
+
   ngOnInit(): void { }
 
   authenticateLogin() {
