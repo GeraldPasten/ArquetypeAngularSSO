@@ -36,7 +36,7 @@ export class BackEndApiService {
         'Authorization': `Bearer ${authToken}`
       });
     
-      return this.http.get<any>(this.url, { headers: headers }).pipe(
+      return this.http.post<any>(this.url, { headers: headers }).pipe(
         catchError(this.handleError.bind(this))
       );
     }

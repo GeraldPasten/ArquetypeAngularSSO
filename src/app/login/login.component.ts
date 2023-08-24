@@ -5,6 +5,7 @@ import { environment } from 'src/environments/environment.prod';
 const clientId = environment.client;
 const urlKeycloak = environment.urlKeycloak;
 const realm = environment.realm;
+const prueba = environment.prueba;
 
 @Component({
   selector: 'app-login',
@@ -21,8 +22,11 @@ export class LoginComponent implements OnInit {
     const keycloakConfig = {
       url: urlKeycloak,
       realm: realm,
-      clientId: clientId
+      clientId: clientId,
+      prueba:prueba
     };
+
+    console.log(prueba)
 
     const keycloak = new Keycloak(keycloakConfig);
     

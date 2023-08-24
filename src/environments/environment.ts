@@ -2,13 +2,22 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// export const environment = {
+//   production: false,
+//   url: 'https://baseservice-quarkus-gateway-sso1-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/gateway/rest',
+//   urlKeycloak: 'https://keycloak-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/auth',
+//   realm: 'front',
+//   client: 'frontend'
+// };
+
 export const environment = {
-  production: false,
-  url: 'https://baseservice-quarkus-gateway-sso1-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/gateway/rest',
-  urlKeycloak: 'https://keycloak-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/auth',
+  production: true,
+  url:'https://baseservice-quarkus-gateway-sso1-sso-example.apps.cluster-h7psk.h7psk.sandbox2742.opentlc.com/gateway/rest',
+  urlKeycloak: 'https://keycloak-work-space.apps.cluster-r294n.r294n.sandbox92.opentlc.com/auth',
   realm: 'front',
-  client: 'frontend'
-};
+  client: 'frontend',
+  prueba: process.env['VARIABLE1'] ?? 'a'
+}
 
 // export const environment = {
 //   production: false,
