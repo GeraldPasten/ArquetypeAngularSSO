@@ -32,6 +32,7 @@ export class BackEndApiService {
     const authToken = this.getAuthToken();
 
     if (authToken) {
+      console.log(authToken)
       const headers = new HttpHeaders({
         'Authorization': `Bearer ${authToken}`
       });

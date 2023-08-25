@@ -43,6 +43,7 @@ export class HomeComponent implements OnInit {
         }
         if (keycloak.token) {
           this.parseToken(keycloak.token);
+          console.log(keycloak.token)
           sessionStorage.setItem("authKey", keycloak.token);
         }
       })
