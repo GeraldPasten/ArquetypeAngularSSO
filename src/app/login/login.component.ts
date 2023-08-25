@@ -14,8 +14,12 @@ const realm = environment.realm;
 export class LoginComponent implements OnInit {
 
   ngOnInit(): void { }
-
+  
   authenticateLogin() {
+    console.log(clientId)
+    console.log(urlKeycloak)
+    console.log(realm)
+
     const keycloakConfig = {
       url: urlKeycloak,
       realm: realm,

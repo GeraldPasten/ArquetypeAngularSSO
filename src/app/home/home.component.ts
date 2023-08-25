@@ -22,6 +22,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 
+    console.log(clientId)
+    console.log(urlKeycloak)
+    console.log(realm)
+
     const keycloakConfig = {
       url: urlKeycloak,
       realm: realm,
